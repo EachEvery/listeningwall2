@@ -1,0 +1,11 @@
+@import "animations";
+@import "./tailwind/tailwind.css";
+
+body {
+    font-family: "Work Sans";
+    -webkit-font-smoothing: antialiased;
+}
+
+.home .scroll-view > div {
+    display: flex;
+}

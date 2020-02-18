@@ -1,0 +1,19 @@
+{
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ddb2a5",
+        "activityBar.activeBorder": "#348b48",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#348b48",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "titleBar.activeBackground": "#cf9380",
+        "titleBar.inactiveBackground": "#cf938099",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveForeground": "#15202b99",
+        "statusBar.background": "#cf9380",
+        "statusBarItem.hoverBackground": "#c1745b",
+        "statusBar.foreground": "#15202b"
+    },
+    "peacock.color": "#cf9380"
+}

@@ -1,0 +1,22 @@
+{
+    "tags": [
+        {
+            "name": "Refuge",
+            "color": "#9b59b6",
+            "id": "7dDpqifS7YGmKGC2U6O4uY"
+        },
+        { "name": "Hope", "color": "#f1c40f", "id": "65YrSAurlYI2o22EMMY840" },
+        { "name": "Voice", "color": "#fd7b7b", "id": "2rxqcvguPy682Go8mGy0qC" },
+        {
+            "name": "Memory",
+            "color": "#AEAD35",
+            "id": "4ohHOn0rBeY0kKiQ4WY626"
+        },
+        {
+            "name": "Nature",
+            "color": "#974669",
+            "id": "1POgnqqcDGW6gSqmkcGAwE"
+        },
+        { "name": "Family", "color": "#48cd99", "id": "5mAXPdYuY0A0soEcU4g2Eg" }
+    ]
+}
