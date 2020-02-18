@@ -44,7 +44,7 @@ class Iframe extends Resource
             Text::make('Website'),
             Code::make('Embed Code')->onlyOnDetail(),
             Color::make('Background Color'),
-            BelongsToMany::make('Responses'),
+            BelongsToMany::make('Responses')->searchable(),
         ];
     }
 

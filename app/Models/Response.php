@@ -6,19 +6,10 @@ use App\Contracts\RelatesToCollections;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Cache;
-use Spatie\EloquentSortable\Sortable;
-use Spatie\EloquentSortable\SortableTrait;
 
-class Response extends Model implements RelatesToCollections, Sortable
+class Response extends Model implements RelatesToCollections
 {
-    use SortableTrait;
-
     use Notifiable;
-
-    public $sortable = [
-        'order_column_name' => 'order',
-        'sort_when_creating' => true,
-    ];
 
     protected $guarded = [];
 

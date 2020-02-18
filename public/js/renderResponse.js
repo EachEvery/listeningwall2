@@ -1844,9 +1844,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_mixins_extractPoemDataFromNovaField__WEBPACK_IMPORTED_MODULE_0__["default"]],
@@ -6360,7 +6357,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".poem[data-v-6fbd99d4] {\n  padding-top: calc(var(--base, 1) * 2rem);\n  padding-bottom: calc(var(--base, 1) * 5rem);\n  font-family: \"Work Sans\";\n  width: calc(var(--base, 1) * 40rem);\n  display: flex;\n  flex-direction: column;\n}\n.poem__info[data-v-6fbd99d4] {\n  align-self: center;\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  font-weight: 800;\n  text-transform: uppercase;\n}\n.poem__title[data-v-6fbd99d4] {\n  font-size: calc(var(--base, 1) * 2.6rem);\n}\n.poem__author[data-v-6fbd99d4] {\n  font-size: calc(var(--base, 1) * 1.2rem);\n  margin-top: calc(var(--base, 1) * .5rem);\n}\n.row[data-v-6fbd99d4] {\n  height: calc(var(--base, 1) * 2.5rem);\n  position: relative;\n  border-top: calc(var(--base, 1) * 1px) solid #ddd;\n}\n.row__container[data-v-6fbd99d4] {\n  /* margin-top: 3rem; */\n  margin: calc(var(--base, 1) * 3rem) calc(var(--base, 1) * 3rem) 0;\n  border-bottom: calc(var(--base, 1) * 1px) solid #ddd;\n}\n.word[data-v-6fbd99d4] {\n  position: absolute;\n  border-radius: calc(var(--base, 1) * 35px);\n  padding: calc(var(--base, 1) * .5rem) calc(var(--base, 1) * 1rem);\n  color: #fff;\n  text-transform: uppercase;\n  font-weight: bold;\n  margin-top: calc(var(--base, 1) * .16rem);\n  font-size: calc(var(--base, 1) * 1rem);\n}\n", ""]);
+exports.push([module.i, ".poem[data-v-6fbd99d4] {\n  padding-bottom: calc(var(--base, 1) * 5rem);\n  font-family: \"Work Sans\";\n  width: calc(var(--base, 1) * 40rem);\n  display: flex;\n  flex-direction: column;\n}\n.poem__info[data-v-6fbd99d4] {\n  height: calc(var(--base, 1) * 8rem);\n  margin-top: calc(var(--base, 1) * 1rem);\n  align-self: center;\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  font-weight: 800;\n  text-transform: uppercase;\n  text-align: center;\n  max-width: calc(var(--base, 1) * 30rem);\n}\n.poem__title[data-v-6fbd99d4] {\n  font-size: calc(var(--base, 1) * 2.6rem);\n}\n.poem__author[data-v-6fbd99d4] {\n  font-size: calc(var(--base, 1) * 1.2rem);\n  margin-top: calc(var(--base, 1) * .5rem);\n}\n.row[data-v-6fbd99d4] {\n  height: calc(var(--base, 1) * 2.5rem);\n  position: relative;\n  border-top: calc(var(--base, 1) * 1px) solid #ddd;\n}\n.row__container[data-v-6fbd99d4] {\n  /* margin-top: 3rem; */\n  margin: calc(var(--base, 1) * 3rem) calc(var(--base, 1) * 3rem) 0;\n  border-bottom: calc(var(--base, 1) * 1px) solid #ddd;\n}\n.word[data-v-6fbd99d4] {\n  position: absolute;\n  border-radius: calc(var(--base, 1) * 35px);\n  padding: calc(var(--base, 1) * .5rem) calc(var(--base, 1) * 1rem);\n  color: #fff;\n  text-transform: uppercase;\n  font-weight: bold;\n  margin-top: calc(var(--base, 1) * .16rem);\n  font-size: calc(var(--base, 1) * 1rem);\n}\n", ""]);
 
 // exports
 
@@ -37634,13 +37631,7 @@ var render = function() {
                     staticClass: "word",
                     style: _vm.getWordStyle(word)
                   },
-                  [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(word.word) +
-                        "\n                "
-                    )
-                  ]
+                  [_vm._v(_vm._s(word.word))]
                 )
               }),
               0

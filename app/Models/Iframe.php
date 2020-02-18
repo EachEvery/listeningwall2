@@ -11,8 +11,7 @@ class Iframe extends Model
     public function responses()
     {
         return $this->belongsToMany(Response::class)
-            ->using(IframeResponse::class)
-            ->withPivot(['id', 'order']);
+            ->using(IframeResponse::class);
     }
 
     public function getEmbedCodeAttribute()

@@ -5,7 +5,6 @@ namespace App\Nova;
 use Eachevery\Poemcard\Poemcard;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
-use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use MichielKempen\NovaOrderField\Orderable;
@@ -35,7 +34,7 @@ class Response extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'title', 'author',
     ];
 
     /**
@@ -46,19 +45,16 @@ class Response extends Resource
     public function fields(Request $request)
     {
         $fields = [
-            // ID::make()->sortable(),
-
             Text::make('Title'),
             Text::make('Author'),
             Poemcard::make('Poem Card', 'poem_card_data')->exceptOnForms(),
             Number::make('Published Height')->onlyOnForms(),
-
-            BelongsToMany::make('Iframes'),
+            BelongsToMany::make('Iframes')->searchable(),
         ];
 
-        if ('iframes' === $request->viaResource && 'responses' === $request->viaRelationship) {
-            array_unshift($fields, OrderField::make('Order'));
-        }
+        // if ('iframes' === $request->viaResource && 'responses' === $request->viaRelationship) {
+        //     array_unshift($fields, OrderField::make('Order', 'iframe_response.order'));
+        // }
 
         return $fields;
     }
