@@ -13,7 +13,11 @@ class ScreenshotController extends Controller
 
     public function show($response)
     {
-        $url = str_replace('listeningwall2.test', 'a2737c10.ngrok.io', route('render', compact('response')));
+        $url = route('render', compact('response'));
+
+        if ('local' === config('app.env')) {
+            $url = str_replace('listeningwall2.test', 'a2737c10.ngrok.io', route('render', compact('response')));
+        }
 
         $url = $this->ssm->generate_screenshot_api_url([
             'url' => $url,

@@ -7,19 +7,18 @@
                 background-color: #000;
                 color: #fff;                
                 font-size: .833vh;
-                overflow: hidden;
-
-                @if($hide_cursor)
-                    cursor: none !important;
-                @endif
+                overflow: hidden;                    
             }
 
             * {
                 user-select: none;
                 
-                @if($hide_cursor)
+            }
+
+            @media screen and (min-height: 1200px) {
+                *, html, body {
                     cursor: none !important;
-                @endif
+                }
             }
         </style>
 @endpush

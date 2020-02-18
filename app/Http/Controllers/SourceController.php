@@ -21,6 +21,8 @@ class SourceController extends Controller
             $req->route('collection_slug')
         );
 
-        return Source::collection($this->sources->forCollection($collection));
+        return Source::collection(
+            $this->sources->forCollection($collection)
+        );
     }
 }
