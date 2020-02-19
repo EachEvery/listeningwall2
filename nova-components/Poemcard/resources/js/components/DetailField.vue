@@ -11,7 +11,23 @@
           >{{ started ? "Generating image..." : "Download Poem" }}</button>
         </div>
         <div class="shadow-lg inline-flex my-8">
-          <poem-card :field="field" :size="size / 100" field-name="Poem Card" ref="poemcard" />
+          <poem-card :field="poemField" :size="size / 100" field-name="Poem Card" ref="poemcard" />
+        </div>
+
+        <h3 class="border-b block text-center text-grey-600 pb-4 mb-6">Fix Word Overflow</h3>
+        <div class="flex justify-between">
+          <div class="flex">
+            <button class="font-bold text-lg mx-2" @click="updatePublishedAtHeight(250)">&larr; Bump</button>
+            <button
+              class="font-bold text-lg mx-2"
+              @click="updatePublishedAtHeight(-250)"
+            >Bump &rarr;</button>
+          </div>
+
+          <div class="flex">
+            <button class="mx-2" @click="updatePublishedAtHeight(25)">&larr; Nudge</button>
+            <button class="mx-2" @click="updatePublishedAtHeight(-25)">Nudge &rarr;</button>
+          </div>
         </div>
       </div>
     </template>
@@ -32,6 +48,14 @@ export default {
     PoemCard
   },
 
+  data() {
+    return {
+      size: 80,
+      state: "default",
+      poemField: { ...this.field }
+    };
+  },
+
   methods: {
     async download() {
       this.state = "started";
@@ -46,6 +70,19 @@ export default {
           this.state = "default";
         }, 2000);
       }, 100);
+    },
+    async updatePublishedAtHeight(val) {
+      let { data: poem } = await Axios.put(
+        `/responses/${this.poemField.value.id}`,
+        {
+          response: {
+            published_height:
+              parseInt(this.poemField.value.height) + parseInt(val)
+          }
+        }
+      );
+
+      this.poemField.value = poem;
     }
   },
 
@@ -53,13 +90,6 @@ export default {
     started({ state }) {
       return state === "started";
     }
-  },
-
-  data() {
-    return {
-      size: 80,
-      state: "default"
-    };
   }
 };
 </script>

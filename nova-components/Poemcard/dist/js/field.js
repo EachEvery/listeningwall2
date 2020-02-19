@@ -1890,8 +1890,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_extractPoemDataFromNovaField__ = __webpack_require__(3);
 
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1926,6 +1944,15 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
     PoemCard: __WEBPACK_IMPORTED_MODULE_1__PoemCard___default.a
   },
 
+  data: function data() {
+    return {
+      size: 80,
+      state: "default",
+      poemField: _extends({}, this.field)
+    };
+  },
+
+
   methods: {
     download: function () {
       var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
@@ -1958,22 +1985,51 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       }
 
       return download;
+    }(),
+    updatePublishedAtHeight: function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2(val) {
+        var _ref3, poem;
+
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return __WEBPACK_IMPORTED_MODULE_2_axios___default.a.put("/responses/" + this.poemField.value.id, {
+                  response: {
+                    published_height: parseInt(this.poemField.value.height) + parseInt(val)
+                  }
+                });
+
+              case 2:
+                _ref3 = _context2.sent;
+                poem = _ref3.data;
+
+
+                this.poemField.value = poem;
+
+              case 5:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function updatePublishedAtHeight(_x) {
+        return _ref2.apply(this, arguments);
+      }
+
+      return updatePublishedAtHeight;
     }()
   },
 
   computed: {
-    started: function started(_ref2) {
-      var state = _ref2.state;
+    started: function started(_ref4) {
+      var state = _ref4.state;
 
       return state === "started";
     }
-  },
-
-  data: function data() {
-    return {
-      size: 80,
-      state: "default"
-    };
   }
 });
 
@@ -3831,14 +3887,80 @@ var render = function() {
               _c("poem-card", {
                 ref: "poemcard",
                 attrs: {
-                  field: _vm.field,
+                  field: _vm.poemField,
                   size: _vm.size / 100,
                   "field-name": "Poem Card"
                 }
               })
             ],
             1
-          )
+          ),
+          _vm._v(" "),
+          _c(
+            "h3",
+            {
+              staticClass: "border-b block text-center text-grey-600 pb-4 mb-6"
+            },
+            [_vm._v("Fix Word Overflow")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex justify-between" }, [
+            _c("div", { staticClass: "flex" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "font-bold text-lg mx-2",
+                  on: {
+                    click: function($event) {
+                      return _vm.updatePublishedAtHeight(250)
+                    }
+                  }
+                },
+                [_vm._v("← Bump")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "font-bold text-lg mx-2",
+                  on: {
+                    click: function($event) {
+                      return _vm.updatePublishedAtHeight(-250)
+                    }
+                  }
+                },
+                [_vm._v("Bump →")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "mx-2",
+                  on: {
+                    click: function($event) {
+                      return _vm.updatePublishedAtHeight(25)
+                    }
+                  }
+                },
+                [_vm._v("← Nudge")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "mx-2",
+                  on: {
+                    click: function($event) {
+                      return _vm.updatePublishedAtHeight(-25)
+                    }
+                  }
+                },
+                [_vm._v("Nudge →")]
+              )
+            ])
+          ])
         ])
       ])
     ],

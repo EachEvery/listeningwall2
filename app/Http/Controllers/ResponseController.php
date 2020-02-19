@@ -30,6 +30,13 @@ class ResponseController extends Controller
         return view('response', compact('response'));
     }
 
+    public function update($response)
+    {
+        $response->update(request('response'));
+
+        return $response->fresh()->poem_card_data;
+    }
+
     public function store(Request $request)
     {
         $collection = $this->collections->slugOrFail(

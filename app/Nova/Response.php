@@ -49,7 +49,7 @@ class Response extends Resource
             Text::make('Author'),
             Poemcard::make('Poem Card', 'poem_card_data')->exceptOnForms(),
             Number::make('Published Height')->onlyOnForms(),
-            BelongsToMany::make('Iframes')->searchable(),
+            BelongsToMany::make('Iframes'),
         ];
 
         // if ('iframes' === $request->viaResource && 'responses' === $request->viaRelationship) {

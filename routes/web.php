@@ -43,3 +43,5 @@ Route::post('/response/{response}/{number}', 'ShareResponseController');
 Route::post('/upload-speed-stub', function () {
     return response('Done', 200);
 });
+
+Route::put('/responses/{response}', 'ResponseController@update')->middleware('auth');

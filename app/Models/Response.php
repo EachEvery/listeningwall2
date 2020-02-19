@@ -6,10 +6,12 @@ use App\Contracts\RelatesToCollections;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Traits\Tappable;
 
 class Response extends Model implements RelatesToCollections
 {
     use Notifiable;
+    use Tappable;
 
     protected $guarded = [];
 
@@ -88,6 +90,7 @@ class Response extends Model implements RelatesToCollections
             'author' => $this->author,
             'words' => $this->words_with_color,
             'imageUrl' => $this->image_url,
+            'height' => $this->published_height,
             'id' => $this->id,
         ];
     }
