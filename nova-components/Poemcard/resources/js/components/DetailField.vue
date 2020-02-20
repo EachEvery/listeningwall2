@@ -14,7 +14,7 @@
           <poem-card :field="poemField" :size="size / 100" field-name="Poem Card" ref="poemcard" />
         </div>
 
-        <h3 class="border-b block text-center text-grey-600 pb-4 mb-6">Fix Word Overflow</h3>
+        <h3 class="border-b block text-center text-grey-600 pb-4 mb-6">Adjust Word Position</h3>
         <div class="flex justify-between">
           <div class="flex">
             <button class="font-bold text-lg mx-2" @click="updatePublishedAtHeight(250)">&larr; Bump</button>
