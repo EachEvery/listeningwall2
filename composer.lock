@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dae4b2d3bc3928b0f330a34c4dcb6f7",
+    "content-hash": "62617d6422b3379d8c2f3d9d93bd3697",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -70,16 +70,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.20",
+            "version": "3.133.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca"
+                "reference": "3501468a7ef894703141d1c4d68caa3b914cbd96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c5f84f9edafb6372dafdbc87cb588772761179ca",
-                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3501468a7ef894703141d1c4d68caa3b914cbd96",
+                "reference": "3501468a7ef894703141d1c4d68caa3b914cbd96",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-21T19:09:49+00:00"
+            "time": "2020-02-24T19:15:07+00:00"
         },
         {
             "name": "cakephp/chronos",
@@ -210,16 +210,16 @@
         },
         {
             "name": "digitalcloud/multilingual-nova",
-            "version": "v2.0.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gr33k01/multilingual-nova.git",
-                "reference": "8a316cd52c826459f5fecad64dee1414abe16f0c"
+                "reference": "3cef7f764ae266186830dff126901839cc1b56ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gr33k01/multilingual-nova/zipball/8a316cd52c826459f5fecad64dee1414abe16f0c",
-                "reference": "8a316cd52c826459f5fecad64dee1414abe16f0c",
+                "url": "https://api.github.com/repos/gr33k01/multilingual-nova/zipball/3cef7f764ae266186830dff126901839cc1b56ed",
+                "reference": "3cef7f764ae266186830dff126901839cc1b56ed",
                 "shasum": ""
             },
             "require": {
@@ -248,9 +248,9 @@
                 "nova"
             ],
             "support": {
-                "source": "https://github.com/gr33k01/multilingual-nova/tree/v2.0.4"
+                "source": "https://github.com/gr33k01/multilingual-nova/tree/master"
             },
-            "time": "2019-07-11T13:40:45+00:00"
+            "time": "2020-02-24T17:42:17+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -6594,6 +6594,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "digitalcloud/multilingual-nova": 20,
         "screenshotmachine/screenshotmachine-php": 20
     },
     "prefer-stable": true,
