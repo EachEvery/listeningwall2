@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Code;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
@@ -52,7 +53,7 @@ class Collection extends Resource
             Textarea::make('Word Bank'),
             Code::make('Watermark Html'),
             BelongsToMany::make('Sources'),
-            BelongsToMany::make('Responses'),
+            HasMany::make('Responses'),
             BelongsToMany::make('Languages')->fields(function () {
                 return [
                     Boolean::make('Is Default'),
