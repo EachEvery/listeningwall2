@@ -9,8 +9,11 @@ use Illuminate\Http\Request;
 
 class ResponseController extends Controller
 {
-    public function __construct(ResponseRepository $responses, Collections $collections, Attachments $attachments)
-    {
+    public function __construct(
+            ResponseRepository $responses,
+            Collections $collections,
+            Attachments $attachments
+    ) {
         $this->responses = $responses;
         $this->collections = $collections;
         $this->attachments = $attachments;
@@ -22,7 +25,8 @@ class ResponseController extends Controller
             $req->route('collection_slug')
         );
 
-        return $this->responses->forCollection($collection)->toArray();
+        return $this->responses
+            ->forCollection($collection)->toArray();
     }
 
     public function show($response)

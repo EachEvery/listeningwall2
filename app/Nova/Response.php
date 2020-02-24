@@ -46,7 +46,7 @@ class Response extends Resource
      */
     public function fields(Request $request)
     {
-        $fields = [
+        return [
             Text::make('Title'),
             Text::make('Author'),
             Poemcard::make('Poem Card', 'poem_card_data')->exceptOnForms(),
@@ -54,8 +54,6 @@ class Response extends Resource
             DateTime::make('Created At')->format('dddd, MMM Do, YYYY')->exceptOnForms(),
             BelongsToMany::make('Iframes'),
         ];
-
-        return $fields;
     }
 
     public static function indexQuery(NovaRequest $request, $query)

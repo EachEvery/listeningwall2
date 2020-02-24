@@ -17,17 +17,19 @@ class ResponseRepository
     {
         $shouldSend = Arr::pull($data, 'should_send_to_author');
 
-        return tap($collection->responses()->create($data), function ($response) use ($shouldSend) {
-            if ('yes' === $shouldSend && !empty($response)) {
-                $response->notify(new CreateResponseNotification());
-            }
-        });
+        $response = $collection->responses()->create($data);
+
+        if ('yes' === $shouldSend && !empty($response)) {
+            $response->notify(new CreateResponseNotification());
+        }
+
+        return $response->poem_card_data;
     }
 
     public function forCollection($collection)
     {
-        return $collection->responses->each(function ($r) {
-            return $r->setAppends(['word_data']);
+        return $collection->responses->map(function ($r) {
+            return $r->poem_card_data;
         });
     }
 

@@ -1,7 +1,7 @@
 <template>
   <div
     @click="handleClick"
-    class="px-4 py-2 bg-category-color text-white rounded-full inline-block text-lg transition uppercase font-sans font-black border-2 border-white"
+    class="px-4 py-2 bg-category-color text-white rounded-full inline-block text-lg uppercase font-sans font-black border-2 border-white"
     :class="{ 'transition-slow': enableTransition }"
     :style="wordStyle"
     ref="word"
@@ -28,6 +28,7 @@ div {
   }
 }
 </style>
+
 <script>
 import caps from "./Caps";
 import { mapMutations } from "vuex";

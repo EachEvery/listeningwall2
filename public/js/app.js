@@ -2395,35 +2395,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -3846,10 +3817,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
 
 
 
@@ -4012,6 +3979,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -4031,11 +4001,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     getWordStyle: function getWordStyle(word) {
       return {
-        left: word.left_percentage,
-        // marginTop: `${this.calc(0.4)}rem`,
+        left: word.left_percentage + "%",
         fontSize: "".concat(this.calc(0.3), "rem"),
         borderWidth: "".concat(this.calc(0.016), "rem"),
-        background: this.getColor(word),
+        background: word.color,
         padding: "".concat(this.calc(0.023), "rem ").concat(this.calc(0.25), "rem")
       };
     },
@@ -4047,7 +4016,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     getRowWords: function getRowWords(row) {
-      debugger;
       return this.words.filter(function (word) {
         return word.row === row.toString();
       });
@@ -4538,7 +4506,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 
 
@@ -4561,6 +4528,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       disabled: false,
       state: ""
     };
+  },
+  mounted: function mounted() {
+    console.log(this.response, "response");
   },
   methods: {
     __: _functions_translate__WEBPACK_IMPORTED_MODULE_4__["default"],
@@ -6300,6 +6270,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -73408,10 +73379,10 @@ var render = function() {
                             },
                             [
                               _vm._v(
-                                "\n                                Add Common\n                                "
+                                "\n                Add Common\n                "
                               ),
                               _c("br"),
-                              _vm._v("Words\n                            ")
+                              _vm._v("Words\n              ")
                             ]
                           )
                         ],
@@ -73451,10 +73422,10 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Clear All\n                                "
+                                    "\n                Clear All\n                "
                                   ),
                                   _c("br"),
-                                  _vm._v("Words\n                            ")
+                                  _vm._v("Words\n              ")
                                 ]
                               )
                             : _vm._e(),
@@ -73468,12 +73439,10 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                Tap again\n                                "
+                                    "\n                Tap again\n                "
                                   ),
                                   _c("br"),
-                                  _vm._v(
-                                    "to Confirm\n                            "
-                                  )
+                                  _vm._v("to Confirm\n              ")
                                 ]
                               )
                             : _vm._e()
@@ -73502,11 +73471,9 @@ var render = function() {
                           on: { drop: _vm.handleDuplicateDrop }
                         },
                         [
-                          _vm._v(
-                            "\n                            Drag to\n                            "
-                          ),
+                          _vm._v("\n              Drag to\n              "),
                           _c("br"),
-                          _vm._v("Duplicate\n                        ")
+                          _vm._v("Duplicate\n            ")
                         ]
                       ),
                       _vm._v(" "),
@@ -73522,11 +73489,9 @@ var render = function() {
                           on: { drop: _vm.handleDeleteDrop }
                         },
                         [
-                          _vm._v(
-                            "\n                            Drag to\n                            "
-                          ),
+                          _vm._v("\n              Drag to\n              "),
                           _c("br"),
-                          _vm._v("Delete\n                        ")
+                          _vm._v("Delete\n            ")
                         ]
                       ),
                       _vm._v(" "),
@@ -73542,11 +73507,9 @@ var render = function() {
                           on: { drop: _vm.handleViewDrop }
                         },
                         [
-                          _vm._v(
-                            "\n                            Drag to\n                            "
-                          ),
+                          _vm._v("\n              Drag to\n              "),
                           _c("br"),
-                          _vm._v("View Source\n                        ")
+                          _vm._v("View Source\n            ")
                         ]
                       )
                     ],
@@ -74728,9 +74691,9 @@ var render = function() {
                     _vm.fadeInWordInfo && word.id !== _vm.popoverWord.id
                 },
                 style: {
-                  left: _vm.calculateLeftPerc(word.left) + "%",
+                  left: word.left_percentage + "%",
                   top: "0",
-                  "background-color": _vm.getColor(word)
+                  "background-color": word.color
                 },
                 attrs: {
                   id: word.id,
@@ -75256,7 +75219,7 @@ var render = function() {
       staticClass: "relative focus:outline-none transition-slow bg-white",
       staticStyle: {
         width: "16.535rem",
-        height: "21.304rem",
+        height: "23.3rem",
         "backface-visibility": "hidden"
       },
       on: {
@@ -75279,7 +75242,7 @@ var render = function() {
             }
           ],
           staticClass:
-            "flex flex-col relative h-full w-full pin overflow-hidden transition border py-4 items-center"
+            "flex flex-col relative h-full w-full pin overflow-hidden transition py-4 pb-8 items-center"
         },
         [
           _c(
@@ -75295,9 +75258,7 @@ var render = function() {
             _vm._v("by " + _vm._s(_vm.response.author))
           ]),
           _vm._v(" "),
-          _c("poem-card", {
-            attrs: { words: [].concat(_vm.response.words_with_color) }
-          })
+          _c("poem-card", { attrs: { words: [].concat(_vm.response.words) } })
         ],
         1
       )
@@ -76899,7 +76860,7 @@ var render = function() {
     {
       ref: "word",
       staticClass:
-        "px-4 py-2 bg-category-color text-white rounded-full inline-block text-lg transition uppercase font-sans font-black border-2 border-white",
+        "px-4 py-2 bg-category-color text-white rounded-full inline-block text-lg uppercase font-sans font-black border-2 border-white",
       class: { "transition-slow": _vm.enableTransition },
       style: _vm.wordStyle,
       on: { click: _vm.handleClick }

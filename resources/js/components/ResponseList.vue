@@ -160,11 +160,13 @@ export default {
     handlePoemCardStateChange(state) {
       this.poemCardState = state;
     },
+
     handleResponseClick(r) {
       if (this.allowClicks) {
         this.activeId = r.id;
       }
     },
+
     handleClickOutside() {
       if (this.canClickOutside) {
         this.activeId = undefined;
@@ -174,12 +176,15 @@ export default {
     isActive(response) {
       return +response.id === +this.activeId;
     },
+
     setState(state) {
       this.state = state;
     },
+
     setActiveResponse(id) {
       this.activeId = id;
     },
+
     getPosition(index) {
       let pos = index + 4;
 
@@ -191,6 +196,7 @@ export default {
         return 2;
       }
     },
+
     handleClose() {
       this.activeId = undefined;
     }
@@ -202,9 +208,11 @@ export default {
       }
       return +activeResponse.published_height;
     },
+
     showingWordInfo({ poemCardState }) {
       return poemCardState === "showWordInfo";
     },
+
     activeResponse({ activeId }) {
       return this.responses.find(r => r.id === activeId);
     },

@@ -136,6 +136,7 @@ class Response extends Model implements RelatesToCollections
             'photo' => $this->photo,
             'video' => $this->video,
             'words' => $this->words,
+            'poem_card_data' => $this->poem_card_data,
             'published_height' => $this->published_height,
         ];
     }
@@ -144,10 +145,10 @@ class Response extends Model implements RelatesToCollections
     {
         parent::boot();
 
-        static::saving(function ($response) {
-            $response->fill([
-                'poem' => $words->implode(' '),
-            ]);
-        });
+        // static::saving(function ($response) {
+        //     $response->fill([
+        //         'poem' => $words->implode(' '),
+        //     ]);
+        // });
     }
 }

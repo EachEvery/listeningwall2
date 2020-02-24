@@ -1,11 +1,11 @@
 <template>
   <button
-    style="width:16.535rem; height: 21.304rem; backface-visibility: hidden"
+    style="width:16.535rem; height: 23.3rem; backface-visibility: hidden"
     class="relative focus:outline-none transition-slow bg-white"
     @click.prevent="emitClick"
   >
     <div
-      class="flex flex-col relative h-full w-full pin overflow-hidden transition border py-4 items-center"
+      class="flex flex-col relative h-full w-full pin overflow-hidden transition py-4 pb-8 items-center"
       v-click-outside="handleClickOutside"
     >
       <div
@@ -14,7 +14,7 @@
 
       <div class="text-black text-2xs font-black mb-4">by {{ response.author }}</div>
 
-      <poem-card :words="[...response.words_with_color]" />
+      <poem-card :words="[...response.words]" />
     </div>
   </button>
 </template>
@@ -58,12 +58,10 @@
   }
 }
 </style>
-
 <script>
 import sources from "../store/sources.js";
 import caps from "./Caps";
 import poemCard from "./PoemCardSmall";
-
 import clickable from "./BaseButton";
 import __ from "../functions/translate";
 
@@ -85,16 +83,24 @@ export default {
       state: ""
     };
   },
+
+  mounted() {
+    console.log(this.response, "response");
+  },
+
   methods: {
     __,
+
     setState(state) {
       this.state = state;
     },
+
     handleClickOutside() {
       if (this.active && !this.fullscreen) {
         this.emitClose();
       }
     },
+
     copyToBuilder() {
       if (this.active) {
         this.$store.dispatch("builder/copyToBuilder", this.response);
@@ -102,11 +108,13 @@ export default {
         this.$router.push("/builder");
       }
     },
+
     emitClick(e) {
       if (!this.active) {
         this.$emit("click", this.response);
       }
     },
+
     emitClose() {
       this.$nextTick(() => {
         this.$emit("close");
