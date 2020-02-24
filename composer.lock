@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff88990371c77c71596d1c567812ec8f",
+    "content-hash": "9dae4b2d3bc3928b0f330a34c4dcb6f7",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -70,16 +70,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.16",
+            "version": "3.133.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "69836088f178890c16f47bc1c67ca36ebcad22f8"
+                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/69836088f178890c16f47bc1c67ca36ebcad22f8",
-                "reference": "69836088f178890c16f47bc1c67ca36ebcad22f8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c5f84f9edafb6372dafdbc87cb588772761179ca",
+                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-17T19:13:12+00:00"
+            "time": "2020-02-21T19:09:49+00:00"
         },
         {
             "name": "cakephp/chronos",
@@ -213,12 +213,12 @@
             "version": "v2.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DigitalCloud/multilingual-nova.git",
+                "url": "https://github.com/gr33k01/multilingual-nova.git",
                 "reference": "8a316cd52c826459f5fecad64dee1414abe16f0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DigitalCloud/multilingual-nova/zipball/8a316cd52c826459f5fecad64dee1414abe16f0c",
+                "url": "https://api.github.com/repos/gr33k01/multilingual-nova/zipball/8a316cd52c826459f5fecad64dee1414abe16f0c",
                 "reference": "8a316cd52c826459f5fecad64dee1414abe16f0c",
                 "shasum": ""
             },
@@ -239,7 +239,6 @@
                     "Digitalcloud\\MultilingualNova\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -248,6 +247,9 @@
                 "laravel",
                 "nova"
             ],
+            "support": {
+                "source": "https://github.com/gr33k01/multilingual-nova/tree/v2.0.4"
+            },
             "time": "2019-07-11T13:40:45+00:00"
         },
         {
@@ -550,7 +552,7 @@
         },
         {
             "name": "eachevery/poemcard",
-            "version": "dev-new_design",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Poemcard",
@@ -583,7 +585,7 @@
         },
         {
             "name": "eachevery/tsnovastyles",
-            "version": "dev-new_design",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Tsnovastyles",
@@ -812,24 +814,24 @@
         },
         {
             "name": "fideloper/proxy",
-            "version": "4.2.2",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fideloper/TrustedProxy.git",
-                "reference": "790194d5d3da89a713478875d2e2d05855a90a81"
+                "reference": "ec38ad69ee378a1eec04fb0e417a97cfaf7ed11a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/790194d5d3da89a713478875d2e2d05855a90a81",
-                "reference": "790194d5d3da89a713478875d2e2d05855a90a81",
+                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/ec38ad69ee378a1eec04fb0e417a97cfaf7ed11a",
+                "reference": "ec38ad69ee378a1eec04fb0e417a97cfaf7ed11a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^5.0|^6.0|^7.0",
+                "illuminate/contracts": "^5.0|^6.0|^7.0|^8.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "illuminate/http": "^5.0|^6.0|^7.0",
+                "illuminate/http": "^5.0|^6.0|^7.0|^8.0",
                 "mockery/mockery": "^1.0",
                 "phpunit/phpunit": "^6.0"
             },
@@ -862,7 +864,7 @@
                 "proxy",
                 "trusted proxy"
             ],
-            "time": "2019-12-20T13:11:11+00:00"
+            "time": "2020-02-22T01:51:47+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1555,16 +1557,16 @@
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.23",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "15b0cdeab7240bf8e8bffa85ae5275bbc3692bf4"
+                "reference": "4382036bde5dc926f9b8b337e5bdb15e5ec7b570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/15b0cdeab7240bf8e8bffa85ae5275bbc3692bf4",
-                "reference": "15b0cdeab7240bf8e8bffa85ae5275bbc3692bf4",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
+                "reference": "4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
                 "shasum": ""
             },
             "require": {
@@ -1598,7 +1600,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2019-06-05T17:18:29+00:00"
+            "time": "2020-02-23T13:31:58+00:00"
         },
         {
             "name": "michielkempen/nova-order-field",
@@ -2334,16 +2336,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.23",
+            "version": "2.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "c78eb5058d5bb1a183133c36d4ba5b6675dfa099"
+                "reference": "40998159a0907cc523e1f2d1904d45765613a617"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/c78eb5058d5bb1a183133c36d4ba5b6675dfa099",
-                "reference": "c78eb5058d5bb1a183133c36d4ba5b6675dfa099",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/40998159a0907cc523e1f2d1904d45765613a617",
+                "reference": "40998159a0907cc523e1f2d1904d45765613a617",
                 "shasum": ""
             },
             "require": {
@@ -2422,7 +2424,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2019-09-17T03:41:22+00:00"
+            "time": "2020-02-04T12:15:04+00:00"
         },
         {
             "name": "podlove/webvtt-parser",
@@ -2781,16 +2783,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.9.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb"
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7779489a47d443f845271badbdcedfe4df8e06fb",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7e1633a6964b48589b142d60542f9ed31bd37a92",
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92",
                 "shasum": ""
             },
             "require": {
@@ -2864,7 +2866,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2019-12-17T08:18:51+00:00"
+            "time": "2020-02-21T04:36:14+00:00"
         },
         {
             "name": "screenshotmachine/screenshotmachine-php",

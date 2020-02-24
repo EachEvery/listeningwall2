@@ -78,6 +78,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/EachEvery/screenshotmachine-php"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gr33k01/multilingual-nova"
         }
     ],
     "autoload-dev": {

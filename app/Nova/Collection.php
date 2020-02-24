@@ -52,6 +52,7 @@ class Collection extends Resource
             Textarea::make('Word Bank'),
             Code::make('Watermark Html'),
             BelongsToMany::make('Sources'),
+            BelongsToMany::make('Responses'),
             BelongsToMany::make('Languages')->fields(function () {
                 return [
                     Boolean::make('Is Default'),

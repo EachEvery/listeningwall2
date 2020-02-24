@@ -3,12 +3,14 @@
 namespace App\Nova;
 
 use Eachevery\Poemcard\Poemcard;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use MichielKempen\NovaOrderField\Orderable;
-use MichielKempen\NovaOrderField\OrderField;
 
 class Response extends Resource
 {
@@ -49,14 +51,20 @@ class Response extends Resource
             Text::make('Author'),
             Poemcard::make('Poem Card', 'poem_card_data')->exceptOnForms(),
             Number::make('Published Height')->onlyOnForms(),
+            DateTime::make('Created At')->format('dddd, MMM Do, YYYY')->exceptOnForms(),
             BelongsToMany::make('Iframes'),
         ];
 
-        // if ('iframes' === $request->viaResource && 'responses' === $request->viaRelationship) {
-        //     array_unshift($fields, OrderField::make('Order', 'iframe_response.order'));
-        // }
-
         return $fields;
+    }
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+        $query->when(empty($request->get('orderBy')), function (Builder $q) {
+            $q->getQuery()->orders = [];
+
+            return $q->orderBy('created_at', 'desc');
+        });
     }
 
     /**

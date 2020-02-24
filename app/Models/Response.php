@@ -139,4 +139,15 @@ class Response extends Model implements RelatesToCollections
             'published_height' => $this->published_height,
         ];
     }
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::saving(function ($response) {
+            $response->fill([
+                'poem' => $words->implode(' '),
+            ]);
+        });
+    }
 }

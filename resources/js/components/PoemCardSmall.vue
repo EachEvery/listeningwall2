@@ -61,6 +61,7 @@ export default {
     },
 
     getRowWords(row) {
+      debugger;
       return this.words.filter(word => word.row === row.toString());
     }
   }

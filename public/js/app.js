@@ -4047,6 +4047,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     getRowWords: function getRowWords(row) {
+      debugger;
       return this.words.filter(function (word) {
         return word.row === row.toString();
       });
