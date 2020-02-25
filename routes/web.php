@@ -15,6 +15,7 @@ use App\Http\Middleware\SetLocale;
 use App\Repositories\Collections;
 
 Route::get('/responses/{response}', 'ResponseController@show')->name('render');
+Route::get('/responses/{response}/siblings', 'GetResponseSiblingsController');
 Route::get('/responses/{response}/screenshot', 'ScreenshotController@show')->name('screenshot');
 
 Route::get('/embed/{iframe}', 'IframeController@show')->name('embed');
