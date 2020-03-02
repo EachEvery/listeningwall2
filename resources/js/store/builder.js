@@ -8,18 +8,22 @@ import randomString from "../functions/randomString";
 
 export default {
     ...createNamespacedHelpers("builder"),
+
     namespaced: true,
+
     state: {
         words: [...getHelperWords().map(word => getWordObj(word))],
         videoUrl: undefined,
         thumbnailUrl: undefined,
+        builderWidth: undefined,
+        blob: undefined,
+        placingWord: false,
+        publishKey: randomString(),
         name: "",
         title: "",
-        blob: undefined,
-        phone: "",
-        placingWord: false,
-        publishKey: randomString()
+        phone: ""
     },
+
     getters: {
         sourceWords({ words }) {
             return words.filter(item => !item.wordIsHelper);
@@ -41,6 +45,7 @@ export default {
             }));
         }
     },
+
     mutations: {
         setPhone(state, phone) {
             state.phone = phone;
@@ -68,6 +73,10 @@ export default {
         },
         setThumbnailUrl(state, url) {
             state.thumbnailUrl = url;
+        },
+        setBuilderWidth(state, width) {
+            console.log(state.builderWidth, "width");
+            state.builderWidth = width;
         },
         resetBuilder(state) {
             state.words = [...getHelperWords().map(word => getWordObj(word))];
@@ -104,9 +113,11 @@ export default {
 
             state.words.push(item);
         },
+
         addWord(state, wordObject) {
             state.words.push(wordObject);
         },
+
         toggleWord(state, wordObject) {
             let index = state.words.findIndex(
                 item => item.id === wordObject.id
@@ -119,6 +130,7 @@ export default {
             }
         }
     },
+
     actions: {
         addWordToBuilder(
             { rootState, commit, getters: { wordsInCard } },
@@ -128,7 +140,6 @@ export default {
                 wordsInCard.length === 0
                     ? undefined
                     : wordsInCard[wordsInCard.length - 1];
-            console.log("last word", lastWord);
 
             let newPos = builderUtils.getNewWordPosition(lastWord, true);
             let source = rootState.sources.sources.find(
@@ -156,7 +167,7 @@ export default {
             );
         },
 
-        copyToBuilder({ rootState, getters, commit }, response) {
+        copyToBuilder({ rootState, getters, commit, state }, response) {
             let sources = rootState.sources.sources;
 
             getters.wordsInCard.forEach(item => {
@@ -165,6 +176,11 @@ export default {
 
             response.words.forEach(word => {
                 let source = sources.find(s => +s.id === word.sourceId);
+
+                debugger;
+
+                let calculatedLeftFromPerc =
+                    (word.left_percentage / 100) * state.builderWidth;
 
                 commit("addWord", {
                     id: randomString(),
@@ -178,7 +194,7 @@ export default {
                               }
                             : source,
                     row: word.row,
-                    left: word.left,
+                    left: calculatedLeftFromPerc,
                     wordIsHelper: source === undefined,
                     animated: true
                 });

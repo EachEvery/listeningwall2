@@ -2395,6 +2395,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 
@@ -2417,7 +2418,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
+/* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_mixins_managesState__WEBPACK_IMPORTED_MODULE_1__["default"]],
   components: {
     dropTarget: _components_DropTarget__WEBPACK_IMPORTED_MODULE_13__["default"],
@@ -2449,10 +2450,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   props: {
     open: Boolean
   },
-  mounted: function mounted() {
-    this.setPlacingWord(false);
-  },
-  methods: _objectSpread({}, _store_builder_js__WEBPACK_IMPORTED_MODULE_16__["default"].mapMutations(["setPlacingWord", "setBlob"]), {
+  methods: _objectSpread({}, _store_builder_js__WEBPACK_IMPORTED_MODULE_16__["default"].mapMutations(["setPlacingWord", "setBlob", "setBuilderWidth"]), {
     updateBlob: function updateBlob() {
       var _this = this;
 
@@ -2867,18 +2865,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     }
   },
-  updated: function updated() {}
-}, "mounted", function mounted() {
-  var _this11 = this;
+  mounted: function mounted() {
+    var _this11 = this;
 
-  this.$nextTick(function () {
-    _this11.initDragDrop();
-  });
-  setTimeout(function () {
-    _this11.state = "init";
-  }, 300);
-  this.refreshHelperWords();
-}));
+    this.setPlacingWord(false);
+    this.$nextTick(function () {
+      _this11.initDragDrop();
+    });
+    setTimeout(function () {
+      _this11.state = "init";
+    }, 300);
+    this.refreshHelperWords();
+    this.setBuilderWidth(this.$refs.cardInner.clientWidth);
+  }
+});
 
 /***/ }),
 
@@ -73266,6 +73266,7 @@ var render = function() {
               _c(
                 "div",
                 {
+                  ref: "cardInner",
                   staticClass:
                     "bg-white inline-block self-center w-full flex flex-col relative transition-slow",
                   staticStyle: { width: "29rem" },
@@ -97663,12 +97664,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     })),
     videoUrl: undefined,
     thumbnailUrl: undefined,
+    builderWidth: undefined,
+    blob: undefined,
+    placingWord: false,
+    publishKey: Object(_functions_randomString__WEBPACK_IMPORTED_MODULE_5__["default"])(),
     name: "",
     title: "",
-    blob: undefined,
-    phone: "",
-    placingWord: false,
-    publishKey: Object(_functions_randomString__WEBPACK_IMPORTED_MODULE_5__["default"])()
+    phone: ""
   },
   getters: {
     sourceWords: function sourceWords(_ref) {
@@ -97732,6 +97734,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     setThumbnailUrl: function setThumbnailUrl(state, url) {
       state.thumbnailUrl = url;
     },
+    setBuilderWidth: function setBuilderWidth(state, width) {
+      console.log(state.builderWidth, "width");
+      state.builderWidth = width;
+    },
     resetBuilder: function resetBuilder(state) {
       state.words = _toConsumableArray(Object(_functions_helperWords__WEBPACK_IMPORTED_MODULE_2__["getHelperWords"])().map(function (word) {
         return Object(_functions_helperWords__WEBPACK_IMPORTED_MODULE_2__["getWordObj"])(word);
@@ -97790,7 +97796,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           commit = _ref7.commit,
           wordsInCard = _ref7.getters.wordsInCard;
       var lastWord = wordsInCard.length === 0 ? undefined : wordsInCard[wordsInCard.length - 1];
-      console.log("last word", lastWord);
       var newPos = _functions_builderUtils__WEBPACK_IMPORTED_MODULE_3__["default"].getNewWordPosition(lastWord, true);
       var source = rootState.sources.sources.find(function (s) {
         return +s.id === word.sourceId;
@@ -97817,7 +97822,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     copyToBuilder: function copyToBuilder(_ref9, response) {
       var rootState = _ref9.rootState,
           getters = _ref9.getters,
-          commit = _ref9.commit;
+          commit = _ref9.commit,
+          state = _ref9.state;
       var sources = rootState.sources.sources;
       getters.wordsInCard.forEach(function (item) {
         commit("deleteWord", item);
@@ -97826,6 +97832,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         var source = sources.find(function (s) {
           return +s.id === word.sourceId;
         });
+        debugger;
+        var calculatedLeftFromPerc = word.left_percentage / 100 * state.builderWidth;
         commit("addWord", {
           id: Object(_functions_randomString__WEBPACK_IMPORTED_MODULE_5__["default"])(),
           word: word.word,
@@ -97835,7 +97843,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }
           } : source,
           row: word.row,
-          left: word.left,
+          left: calculatedLeftFromPerc,
           wordIsHelper: source === undefined,
           animated: true
         });
