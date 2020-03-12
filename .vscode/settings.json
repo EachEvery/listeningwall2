@@ -2,6 +2,7 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.colorCustomizations": {
         "activityBar.background": "#ddb2a5",
+        "activityBar.activeBackground": "#ddb2a5",
         "activityBar.activeBorder": "#348b48",
         "activityBar.foreground": "#15202b",
         "activityBar.inactiveForeground": "#15202b99",

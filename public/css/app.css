@@ -469,20 +469,22 @@ img {
   height: auto;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: inherit;
   opacity: .5;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   color: inherit;
   opacity: .5;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: inherit;
   opacity: .5;
 }
@@ -8150,63 +8152,51 @@ table {
 }
 
 .move-x-1 {
-  -webkit-transform: translateX(.125rem) translateZ(0);
-          transform: translateX(.125rem) translateZ(0);
+  transform: translateX(.125rem) translateZ(0);
 }
 
 .-move-x-1 {
-  -webkit-transform: translateX(-.125rem) translateZ(0);
-          transform: translateX(-.125rem) translateZ(0);
+  transform: translateX(-.125rem) translateZ(0);
 }
 
 .move-x-2 {
-  -webkit-transform: translateX(.238rem) translateZ(0);
-          transform: translateX(.238rem) translateZ(0);
+  transform: translateX(.238rem) translateZ(0);
 }
 
 .-move-x-2 {
-  -webkit-transform: translateX(-.238rem) translateZ(0);
-          transform: translateX(-.238rem) translateZ(0);
+  transform: translateX(-.238rem) translateZ(0);
 }
 
 .move-y-1 {
-  -webkit-transform: translateY(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateZ(0);
 }
 
 .-move-y-1 {
-  -webkit-transform: translateY(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateZ(0);
 }
 
 .move-y-2 {
-  -webkit-transform: translateY(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateZ(0);
 }
 
 .-move-y-2 {
-  -webkit-transform: translateY(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateZ(0);
 }
 
 .move-xy-1 {
-  -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateX(.125rem) translateZ(0);
 }
 
 .-move-xy-1 {
-  -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
 }
 
 .move-xy-2 {
-  -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateX(.238rem) translateZ(0);
 }
 
 .-move-xy-2 {
-  -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
 }
 
 .hover\:transition:hover {
@@ -8222,63 +8212,51 @@ table {
 }
 
 .hover\:move-x-1:hover {
-  -webkit-transform: translateX(.125rem) translateZ(0);
-          transform: translateX(.125rem) translateZ(0);
+  transform: translateX(.125rem) translateZ(0);
 }
 
 .hover\:-move-x-1:hover {
-  -webkit-transform: translateX(-.125rem) translateZ(0);
-          transform: translateX(-.125rem) translateZ(0);
+  transform: translateX(-.125rem) translateZ(0);
 }
 
 .hover\:move-x-2:hover {
-  -webkit-transform: translateX(.238rem) translateZ(0);
-          transform: translateX(.238rem) translateZ(0);
+  transform: translateX(.238rem) translateZ(0);
 }
 
 .hover\:-move-x-2:hover {
-  -webkit-transform: translateX(-.238rem) translateZ(0);
-          transform: translateX(-.238rem) translateZ(0);
+  transform: translateX(-.238rem) translateZ(0);
 }
 
 .hover\:move-y-1:hover {
-  -webkit-transform: translateY(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateZ(0);
 }
 
 .hover\:-move-y-1:hover {
-  -webkit-transform: translateY(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateZ(0);
 }
 
 .hover\:move-y-2:hover {
-  -webkit-transform: translateY(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateZ(0);
 }
 
 .hover\:-move-y-2:hover {
-  -webkit-transform: translateY(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateZ(0);
 }
 
 .hover\:move-xy-1:hover {
-  -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateX(.125rem) translateZ(0);
 }
 
 .hover\:-move-xy-1:hover {
-  -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
 }
 
 .hover\:move-xy-2:hover {
-  -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateX(.238rem) translateZ(0);
 }
 
 .hover\:-move-xy-2:hover {
-  -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:transition {
@@ -8294,63 +8272,51 @@ table {
 }
 
 .group:hover .group-hover\:move-x-1 {
-  -webkit-transform: translateX(.125rem) translateZ(0);
-          transform: translateX(.125rem) translateZ(0);
+  transform: translateX(.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-x-1 {
-  -webkit-transform: translateX(-.125rem) translateZ(0);
-          transform: translateX(-.125rem) translateZ(0);
+  transform: translateX(-.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:move-x-2 {
-  -webkit-transform: translateX(.238rem) translateZ(0);
-          transform: translateX(.238rem) translateZ(0);
+  transform: translateX(.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-x-2 {
-  -webkit-transform: translateX(-.238rem) translateZ(0);
-          transform: translateX(-.238rem) translateZ(0);
+  transform: translateX(-.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:move-y-1 {
-  -webkit-transform: translateY(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-y-1 {
-  -webkit-transform: translateY(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:move-y-2 {
-  -webkit-transform: translateY(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-y-2 {
-  -webkit-transform: translateY(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:move-xy-1 {
-  -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateX(.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-xy-1 {
-  -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
 }
 
 .group:hover .group-hover\:move-xy-2 {
-  -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateX(.238rem) translateZ(0);
 }
 
 .group:hover .group-hover\:-move-xy-2 {
-  -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
 }
 
 .active\:transition:active {
@@ -8366,63 +8332,51 @@ table {
 }
 
 .active\:move-x-1:active {
-  -webkit-transform: translateX(.125rem) translateZ(0);
-          transform: translateX(.125rem) translateZ(0);
+  transform: translateX(.125rem) translateZ(0);
 }
 
 .active\:-move-x-1:active {
-  -webkit-transform: translateX(-.125rem) translateZ(0);
-          transform: translateX(-.125rem) translateZ(0);
+  transform: translateX(-.125rem) translateZ(0);
 }
 
 .active\:move-x-2:active {
-  -webkit-transform: translateX(.238rem) translateZ(0);
-          transform: translateX(.238rem) translateZ(0);
+  transform: translateX(.238rem) translateZ(0);
 }
 
 .active\:-move-x-2:active {
-  -webkit-transform: translateX(-.238rem) translateZ(0);
-          transform: translateX(-.238rem) translateZ(0);
+  transform: translateX(-.238rem) translateZ(0);
 }
 
 .active\:move-y-1:active {
-  -webkit-transform: translateY(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateZ(0);
 }
 
 .active\:-move-y-1:active {
-  -webkit-transform: translateY(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateZ(0);
 }
 
 .active\:move-y-2:active {
-  -webkit-transform: translateY(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateZ(0);
 }
 
 .active\:-move-y-2:active {
-  -webkit-transform: translateY(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateZ(0);
 }
 
 .active\:move-xy-1:active {
-  -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-          transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+  transform: translateY(.125rem) translateX(.125rem) translateZ(0);
 }
 
 .active\:-move-xy-1:active {
-  -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-          transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+  transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
 }
 
 .active\:move-xy-2:active {
-  -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-          transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+  transform: translateY(.238rem) translateX(.238rem) translateZ(0);
 }
 
 .active\:-move-xy-2:active {
-  -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-          transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+  transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
 }
 
 @media (min-width: 576px) {
@@ -15997,63 +15951,51 @@ table {
   }
 
   .sm\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .sm\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .sm\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .sm\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .sm\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .sm\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .sm\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .sm\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .sm\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .sm\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .sm\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .sm\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .sm\:hover\:transition:hover {
@@ -16069,63 +16011,51 @@ table {
   }
 
   .sm\:hover\:move-x-1:hover {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .sm\:hover\:-move-x-1:hover {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .sm\:hover\:move-x-2:hover {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .sm\:hover\:-move-x-2:hover {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .sm\:hover\:move-y-1:hover {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .sm\:hover\:-move-y-1:hover {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .sm\:hover\:move-y-2:hover {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .sm\:hover\:-move-y-2:hover {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .sm\:hover\:move-xy-1:hover {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .sm\:hover\:-move-xy-1:hover {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .sm\:hover\:move-xy-2:hover {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .sm\:hover\:-move-xy-2:hover {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:transition {
@@ -16141,63 +16071,51 @@ table {
   }
 
   .group:hover .sm\:group-hover\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .group:hover .sm\:group-hover\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .sm\:active\:transition:active {
@@ -16213,63 +16131,51 @@ table {
   }
 
   .sm\:active\:move-x-1:active {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .sm\:active\:-move-x-1:active {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .sm\:active\:move-x-2:active {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .sm\:active\:-move-x-2:active {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .sm\:active\:move-y-1:active {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .sm\:active\:-move-y-1:active {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .sm\:active\:move-y-2:active {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .sm\:active\:-move-y-2:active {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .sm\:active\:move-xy-1:active {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .sm\:active\:-move-xy-1:active {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .sm\:active\:move-xy-2:active {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .sm\:active\:-move-xy-2:active {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 }
 
@@ -23845,63 +23751,51 @@ table {
   }
 
   .md\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .md\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .md\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .md\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .md\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .md\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .md\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .md\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .md\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .md\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .md\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .md\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .md\:hover\:transition:hover {
@@ -23917,63 +23811,51 @@ table {
   }
 
   .md\:hover\:move-x-1:hover {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .md\:hover\:-move-x-1:hover {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .md\:hover\:move-x-2:hover {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .md\:hover\:-move-x-2:hover {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .md\:hover\:move-y-1:hover {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .md\:hover\:-move-y-1:hover {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .md\:hover\:move-y-2:hover {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .md\:hover\:-move-y-2:hover {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .md\:hover\:move-xy-1:hover {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .md\:hover\:-move-xy-1:hover {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .md\:hover\:move-xy-2:hover {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .md\:hover\:-move-xy-2:hover {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:transition {
@@ -23989,63 +23871,51 @@ table {
   }
 
   .group:hover .md\:group-hover\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .group:hover .md\:group-hover\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .md\:active\:transition:active {
@@ -24061,63 +23931,51 @@ table {
   }
 
   .md\:active\:move-x-1:active {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .md\:active\:-move-x-1:active {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .md\:active\:move-x-2:active {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .md\:active\:-move-x-2:active {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .md\:active\:move-y-1:active {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .md\:active\:-move-y-1:active {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .md\:active\:move-y-2:active {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .md\:active\:-move-y-2:active {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .md\:active\:move-xy-1:active {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .md\:active\:-move-xy-1:active {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .md\:active\:move-xy-2:active {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .md\:active\:-move-xy-2:active {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 }
 
@@ -31693,63 +31551,51 @@ table {
   }
 
   .lg\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .lg\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .lg\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .lg\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .lg\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .lg\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .lg\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .lg\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .lg\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .lg\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .lg\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .lg\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .lg\:hover\:transition:hover {
@@ -31765,63 +31611,51 @@ table {
   }
 
   .lg\:hover\:move-x-1:hover {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .lg\:hover\:-move-x-1:hover {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .lg\:hover\:move-x-2:hover {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .lg\:hover\:-move-x-2:hover {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .lg\:hover\:move-y-1:hover {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .lg\:hover\:-move-y-1:hover {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .lg\:hover\:move-y-2:hover {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .lg\:hover\:-move-y-2:hover {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .lg\:hover\:move-xy-1:hover {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .lg\:hover\:-move-xy-1:hover {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .lg\:hover\:move-xy-2:hover {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .lg\:hover\:-move-xy-2:hover {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:transition {
@@ -31837,63 +31671,51 @@ table {
   }
 
   .group:hover .lg\:group-hover\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .group:hover .lg\:group-hover\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .lg\:active\:transition:active {
@@ -31909,63 +31731,51 @@ table {
   }
 
   .lg\:active\:move-x-1:active {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .lg\:active\:-move-x-1:active {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .lg\:active\:move-x-2:active {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .lg\:active\:-move-x-2:active {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .lg\:active\:move-y-1:active {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .lg\:active\:-move-y-1:active {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .lg\:active\:move-y-2:active {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .lg\:active\:-move-y-2:active {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .lg\:active\:move-xy-1:active {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .lg\:active\:-move-xy-1:active {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .lg\:active\:move-xy-2:active {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .lg\:active\:-move-xy-2:active {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 }
 
@@ -39541,63 +39351,51 @@ table {
   }
 
   .xl\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .xl\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .xl\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .xl\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .xl\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .xl\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .xl\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .xl\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .xl\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .xl\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .xl\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .xl\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .xl\:hover\:transition:hover {
@@ -39613,63 +39411,51 @@ table {
   }
 
   .xl\:hover\:move-x-1:hover {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .xl\:hover\:-move-x-1:hover {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .xl\:hover\:move-x-2:hover {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .xl\:hover\:-move-x-2:hover {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .xl\:hover\:move-y-1:hover {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .xl\:hover\:-move-y-1:hover {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .xl\:hover\:move-y-2:hover {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .xl\:hover\:-move-y-2:hover {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .xl\:hover\:move-xy-1:hover {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .xl\:hover\:-move-xy-1:hover {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .xl\:hover\:move-xy-2:hover {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .xl\:hover\:-move-xy-2:hover {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:transition {
@@ -39685,63 +39471,51 @@ table {
   }
 
   .group:hover .xl\:group-hover\:move-x-1 {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-x-1 {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:move-x-2 {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-x-2 {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:move-y-1 {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-y-1 {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:move-y-2 {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-y-2 {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:move-xy-1 {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-xy-1 {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:move-xy-2 {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .group:hover .xl\:group-hover\:-move-xy-2 {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 
   .xl\:active\:transition:active {
@@ -39757,63 +39531,51 @@ table {
   }
 
   .xl\:active\:move-x-1:active {
-    -webkit-transform: translateX(.125rem) translateZ(0);
-            transform: translateX(.125rem) translateZ(0);
+    transform: translateX(.125rem) translateZ(0);
   }
 
   .xl\:active\:-move-x-1:active {
-    -webkit-transform: translateX(-.125rem) translateZ(0);
-            transform: translateX(-.125rem) translateZ(0);
+    transform: translateX(-.125rem) translateZ(0);
   }
 
   .xl\:active\:move-x-2:active {
-    -webkit-transform: translateX(.238rem) translateZ(0);
-            transform: translateX(.238rem) translateZ(0);
+    transform: translateX(.238rem) translateZ(0);
   }
 
   .xl\:active\:-move-x-2:active {
-    -webkit-transform: translateX(-.238rem) translateZ(0);
-            transform: translateX(-.238rem) translateZ(0);
+    transform: translateX(-.238rem) translateZ(0);
   }
 
   .xl\:active\:move-y-1:active {
-    -webkit-transform: translateY(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateZ(0);
   }
 
   .xl\:active\:-move-y-1:active {
-    -webkit-transform: translateY(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateZ(0);
   }
 
   .xl\:active\:move-y-2:active {
-    -webkit-transform: translateY(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateZ(0);
   }
 
   .xl\:active\:-move-y-2:active {
-    -webkit-transform: translateY(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateZ(0);
   }
 
   .xl\:active\:move-xy-1:active {
-    -webkit-transform: translateY(.125rem) translateX(.125rem) translateZ(0);
-            transform: translateY(.125rem) translateX(.125rem) translateZ(0);
+    transform: translateY(.125rem) translateX(.125rem) translateZ(0);
   }
 
   .xl\:active\:-move-xy-1:active {
-    -webkit-transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
-            transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
+    transform: translateY(-.125rem) translateX(-.125rem) translateZ(0);
   }
 
   .xl\:active\:move-xy-2:active {
-    -webkit-transform: translateY(.238rem) translateX(.238rem) translateZ(0);
-            transform: translateY(.238rem) translateX(.238rem) translateZ(0);
+    transform: translateY(.238rem) translateX(.238rem) translateZ(0);
   }
 
   .xl\:active\:-move-xy-2:active {
-    -webkit-transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
-            transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
+    transform: translateY(-.238rem) translateX(-.238rem) translateZ(0);
   }
 }
 .slideUp-item {
@@ -39823,9 +39585,7 @@ table {
 
 .slideUp-enter-active,
 .slideUp-leave-active {
-  transition: 1s -webkit-transform ease;
   transition: 1s transform ease;
-  transition: 1s transform ease, 1s -webkit-transform ease;
 }
 
 .slideUp-enter {
@@ -39833,18 +39593,15 @@ table {
 }
 
 .slideUp-enter-to {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .slideUp-leave {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .slideUp-leave-to {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .slideUp-item {
@@ -39869,35 +39626,29 @@ table {
 
 @-webkit-keyframes bounce-in {
   0% {
-    -webkit-transform: scale(.9);
-            transform: scale(.9);
+    transform: scale(.9);
   }
 
   50% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    transform: scale(1.03);
   }
 
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes bounce-in {
   0% {
-    -webkit-transform: scale(.9);
-            transform: scale(.9);
+    transform: scale(.9);
   }
 
   50% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    transform: scale(1.03);
   }
 
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -39916,8 +39667,7 @@ table {
 .list-enter,
 .list-leave-to {
   opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .fadeUp-enter-active,
@@ -39925,15 +39675,13 @@ table {
   transition-duration: 500ms;
   transition-property: all;
   transition-timing-function: ease;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .fadeUp-enter,
 .fadeUp-leave-active {
   opacity: 0;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .fadeInOut-enter-active,
@@ -39941,15 +39689,13 @@ table {
   transition-duration: 500ms;
   transition-property: all;
   transition-timing-function: ease;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .fadeInOut-enter,
 .fadeInOut-leave-active {
   opacity: 0;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .fade-enter-active,
@@ -39970,8 +39716,7 @@ table {
 }
 
 .shrink-when-active:active {
-  -webkit-transform: scale(.96) translateZ(0);
-          transform: scale(.96) translateZ(0);
+  transform: scale(.96) translateZ(0);
 }
 
 .list-enter-active {
@@ -39985,8 +39730,7 @@ table {
 .list-enter,
 .list-leave-to {
   opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .list-complete-item {
@@ -39998,8 +39742,7 @@ table {
 .list-complete-enter,
 .list-complete-leave-to {
   opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  transform: translateY(30px);
 }
 
 .list-complete-leave-active {
@@ -40007,9 +39750,7 @@ table {
 }
 
 .list-complete-move {
-  transition: -webkit-transform 1s;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
 }
 
 body {

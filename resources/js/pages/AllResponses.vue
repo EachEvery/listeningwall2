@@ -7,7 +7,7 @@
 
       <div style="width: 9.625rem" class="h-2 bg-white rounded self-center mt-8"></div>
     </div>
-    <response-list :responses="[...responses].reverse().slice(0, 200)" />
+    <response-list :responses="[...responses].reverse()" />
     <div style="height: 14rem"></div>
   </div>
 </template>

@@ -91,6 +91,7 @@ class Response extends Model implements RelatesToCollections
             'words' => $this->words_with_color,
             'imageUrl' => $this->image_url,
             'height' => $this->published_height,
+            'order' => $this->created_at->timestamp,
             'id' => $this->id,
         ];
     }
@@ -138,6 +139,7 @@ class Response extends Model implements RelatesToCollections
             'words' => $this->words,
             'poem_card_data' => $this->poem_card_data,
             'published_height' => $this->published_height,
+            'created_at' => $this->created_at,
         ];
     }
 

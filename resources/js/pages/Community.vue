@@ -52,7 +52,9 @@ export default {
   computed: {
     ...responses.mapState(["responses"]),
     responsesInOrder({ responses }) {
-      return [...responses].slice(0, 200);
+      return [...responses].sort((a, b) => {
+        return b.order - a.order;
+      });
     }
   }
 };
